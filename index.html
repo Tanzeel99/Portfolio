@@ -1,273 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" /> -->
-  <link rel="stylesheet" href="./CSS/style.css" />
-  <title>Tanzeel Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1E1E1E">
+  <meta name="description" content="Mohammed Tanzeel Khan — .NET Full Stack Developer with 4.6 years of experience. Explore enterprise applications, Angular interfaces, and legacy modernization work.">
+  <meta property="og:title" content="Tanzeel Khan — Thoughtful code. Real-world impact.">
+  <meta property="og:description" content=".NET Full Stack Developer. Reliable backends, intuitive Angular experiences, and software built around people.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tanzeel-khan-portfolio.grassyonyx.chatgpt.site">
+  <title>Tanzeel Khan — .NET Full Stack Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/open-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>try{const t=localStorage.getItem('tk-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch{}</script>
+  <script src="script.js" defer></script>
 </head>
-
-<body id="top">
-  <header class="header">
-    <h2 class="visually-hidden">Header</h2>
-    <div class="wrapper">
-      <nav class="header__nav">
-        <h2 class="visually-hidden">Navigation</h2>
-        <a href="#" class="header__home">
-          Tanzeel
-          <span class="visually-hidden">(to home page)</span>
-        </a>
-        <a href="https://github.com/Tanzeel99" target="_blank" class="header__social">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" aria-labelledby="socialGitHub" role="img">
-            <title id="socialGitHub">GitHub</title>
-            <path fill="#FFF" fill-rule="evenodd"
-              d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
-          </svg>
-        </a>
-
-        <a href="https://www.linkedin.com/in/mohammed-tanzeel-khan-891790197/" target="_blank" class="header__social">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" aria-labelledby="socialLinkedIn" role="img">
-            <title id="socialLinkedIn">LinkedIn</title>
-            <path fill="#FFF" fill-rule="evenodd"
-              d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
-          </svg>
-        </a>
-      </nav>
+<body>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.8 13A9 9 0 0 1 11 3.2 9 9 0 1 0 20.8 13Z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8m-8 4h6"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m7 6-6 6 6 6m10-12 6 6-6 6M14 3l-4 18"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 6-10 6L2 9zM2 13l10 6 10-6M2 17l10 6 10-6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-4a3.5 3.5 0 0 0-1-2.8c3.3-.4 6.8-1.6 6.8-7.3A5.7 5.7 0 0 0 20.2 4 5.3 5.3 0 0 0 20.1.2S18.8-.2 16 1.7a14 14 0 0 0-7 0C6.2-.2 4.9.2 4.9.2A5.3 5.3 0 0 0 4.8 4a5.7 5.7 0 0 0-1.6 4c0 5.7 3.5 6.9 6.8 7.3a3.5 3.5 0 0 0-1 2.7v4" transform="translate(0 1) scale(.94)"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7m0-10v.1M11 17v-7m0 3c0-4 6-4 6 0v4"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="tanzeel.in, home"><span class="brand-mark">mtk</span><span class="brand-name">tanzeel<span class="accent">.in</span></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <div class="nav-actions"><button class="icon-button theme-toggle" aria-label="Switch to light theme" title="Switch theme"><svg class="icon sun"><use href="#i-sun"/></svg><svg class="icon moon"><use href="#i-moon"/></svg></button><a class="button button-small resume-nav" href="assets/Mohammed-Tanzeel-Khan-Resume.pdf" download><svg class="icon"><use href="#i-file"/></svg>Resume</a><button class="icon-button menu-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation"><svg class="icon"><use href="#i-menu"/></svg></button></div>
     </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#work">Selected work</a><a href="#expertise">Expertise</a><a href="#about">About & experience</a><a href="#contact">Get in touch</a><a href="assets/Mohammed-Tanzeel-Khan-Resume.pdf" download>Download resume</a></nav>
   </header>
-
   <main id="main">
-    <section class="hero">
-      <div class="wrapper hero__wrapper bottom-border">
-        <div class="hero__content">
-          <picture>
-            <source media="(min-width: 62.5em)" srcset="Images/profile_pic.jpg" />
-            <source media="(min-width: 37.5em)" srcset="Images/profile_pic.jpg" />
-            <img class="hero__image" src="Images/profile_pic.jpg" alt="picture of mohammed tanzeel" />
-          </picture>
-          <div class="hero__text">
-            <h1 class="hero__headline header-xl">
-              I'm <span>Mohammed Tanzeel Khan</span>.
-            </h1>
-            <p class="hero__description">
-              Based in India, I'm a .Net Full Stack developer with 2 years of experience.
-              I have previously worked at Pace Wisdom Solution as .Net Full Stack developer.
-              In my free time, I enjoy spending time with my family members.
-              Thank you for visiting my Portfolio, and please feel free to
-              contact me if you have any questions.
-            </p>
-          </div>
-        </div>
+    <section class="hero container" id="home" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="availability"><span class="status-dot"></span>Available for new opportunities</div>
+        <p class="eyebrow hero-eyebrow">MOHAMMED TANZEEL KHAN <span>/</span> .NET DEVELOPER</p>
+        <h1 id="hero-heading">Thoughtful code.<br><span>Real-world impact.</span></h1>
+        <p class="hero-description">I build reliable backends and intuitive frontends.<br class="desktop-break"> A .NET Full Stack Developer turning complex problems into simple, useful experiences.</p>
+        <div class="hero-buttons"><a href="#work" class="button button-primary">Explore my work</a><a href="#contact" class="button button-plain"><svg class="icon"><use href="#i-mail"/></svg>Let’s talk</a></div>
+        <div class="hero-location"><span><svg class="icon"><use href="#i-pin"/></svg>Mangalore, India</span><span><svg class="icon"><use href="#i-globe"/></svg>Open to relocation</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-backdrop" aria-hidden="true"></div>
+        <div class="portrait-card"><div class="portrait-topline"><span>A LITTLE CODE. A LOT OF CURIOSITY.</span><svg class="icon"><use href="#i-code"/></svg></div><img src="assets/profile_pic.jpg" alt="Mohammed Tanzeel Khan" width="1280" height="1280" fetchpriority="high"><div class="portrait-caption"><span>Engineer by profession.<br><strong>Problem solver by nature.</strong></span><span class="portrait-monogram" aria-hidden="true">mtk.</span></div></div>
+        <div class="experience-badge"><svg class="icon"><use href="#i-layers"/></svg><span><strong>4.6 years</strong><span>of building & delivering</span></span></div>
+        <div class="floating-tag tag-net" aria-hidden="true"><span class="tech-symbol">#</span>C# / .NET</div>
+        <div class="floating-tag tag-angular" aria-hidden="true"><span class="angular-symbol">A</span>Angular</div>
       </div>
     </section>
-
-    <section class="skills">
-      <div class="wrapper bottom-border">
-        <h2 class="projects__headline header-xl">Experience</h2>
-        <h2 class="visually-hidden">Skills</h2>
-        <div class="skills__wrapper">
-          <div class="skills__item">
-            <h3 class="skills__title">HTML</h3>
-            <p class="skills__description">2 Years Experience</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__title">CSS</h3>
-            <p class="skills__description">2 Years Experience</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__title">JavaScript</h3>
-            <p class="skills__description">2 Years Experience</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__title">ASP.Net MVC</h3>
-            <p class="skills__description">2 Years Experience</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__title">Angular</h3>
-            <p class="skills__description">1 Years Experience</p>
-          </div>
-          <div class="skills__item">
-            <h3 class="skills__title">.Net Web Api</h3>
-            <p class="skills__description">1 Years Experience</p>
-          </div>
-        </div>
+    <div class="container"><div class="stack-strip"><span class="stack-label">MY EVERYDAY TOOLKIT</span><div class="stack-items"><span>.NET Core</span><span>Angular</span><span>SQL Server</span><span>Entity Framework</span><span>Azure</span></div></div></div>
+    <section class="section container" id="work" aria-labelledby="work-heading">
+      <div class="section-heading reveal"><div><p class="eyebrow">SELECTED WORK</p><h2 id="work-heading">Built for the real world<span class="accent">.</span></h2></div><p>A few projects where thoughtful engineering<br class="desktop-break"> met real business needs.</p></div>
+      <div class="project-filters" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all" aria-pressed="true">All projects <span>3</span></button><button class="filter" data-filter="fullstack" aria-pressed="false">Full stack</button><button class="filter" data-filter="modernization" aria-pressed="false">Modernization</button></div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="fullstack">
+          <div class="project-art art-data" aria-label="Illustration of a report analysis workflow"><div class="mock-window"><div class="mock-bar"><span class="mock-logo">p<span>v.</span></span><span>REPORT OVERVIEW</span><span class="mock-dots">•••</span></div><div class="mock-dashboard"><div class="mock-sidebar"><i class="selected"></i><i></i><i></i><i></i></div><div class="mock-content"><div class="mock-kpis"><span>Reports<strong>Ready to explore</strong></span><svg viewBox="0 0 100 40"><path d="M2 35 18 25 32 28 46 12 62 17 80 5 98 9"/></svg></div><div class="mock-chart"><i style="--bar:35%"></i><i style="--bar:60%"></i><i style="--bar:45%"></i><i style="--bar:78%"></i><i style="--bar:58%"></i><i style="--bar:90%"></i><i style="--bar:74%"></i><i style="--bar:100%"></i></div><div class="mock-bottom"><span>Upload</span><span>Validate</span><span>Visualize</span></div></div></div></div><span class="art-label">WORKFLOW ILLUSTRATION</span></div>
+          <div class="project-content"><div class="project-category"><span>DATA & REPORTING</span><svg class="icon"><use href="#i-layers"/></svg></div><h3>PVantage</h3><p>From uploaded reports to meaningful insights. A platform that makes complex data easier to work with.</p><div class="tags"><span>.NET Web API</span><span>Angular</span><span>Azure</span></div><button class="project-detail" data-project="pvantage">Explore project <span class="plus" aria-hidden="true">+</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="fullstack modernization">
+          <div class="project-art art-people" aria-label="Illustration of an employee management interface"><div class="mock-window people-window"><div class="mock-bar"><span class="mock-logo">m<span>.</span></span><span>PEOPLE & WORKFLOWS</span><span class="mock-dots">•••</span></div><div class="people-content"><div class="people-heading"><span>Your people. Connected.</span><span class="people-count">TEAM</span></div><div class="person-row"><span class="avatar avatar-lilac">JD</span><span><b>Employee directory</b><i></i></span><span class="row-pill">Connected</span></div><div class="person-row"><span class="avatar avatar-green">AK</span><span><b>Dynamic surveys</b><i></i></span><span class="row-pill">Flexible</span></div><div class="person-row"><span class="avatar avatar-peach">SR</span><span><b>Secure sign-in</b><i></i></span><span class="row-pill">Entra ID</span></div></div></div><span class="art-label">WORKFLOW ILLUSTRATION</span></div>
+          <div class="project-content"><div class="project-category"><span>ENTERPRISE & PEOPLE</span><svg class="icon"><use href="#i-layers"/></svg></div><h3>MDMS</h3><p>A more connected employee experience, with modern workflows, dynamic surveys, and seamless sign-in.</p><div class="tags"><span>ASP.NET MVC</span><span>Kendo UI</span><span>SQL Server</span></div><button class="project-detail" data-project="mdms">Explore project <span class="plus" aria-hidden="true">+</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="modernization">
+          <div class="project-art art-system" aria-label="Illustration of legacy application modernization"><div class="system-diagram"><span class="diagram-kicker">FROM LEGACY TO POSSIBILITY</span><div class="system-source"><svg class="icon"><use href="#i-code"/></svg>VB.NET <span>Legacy</span></div><div class="connection-line"></div><div class="system-core"><span class="core-icon">.NET</span><div><strong>ASP.NET Core 9</strong><span>Modern API layer</span></div><svg class="icon"><use href="#i-check"/></svg></div><div class="connection-fork"></div><div class="system-targets"><span>Salesforce API</span><span>Access DB</span></div></div><span class="art-label">WORKFLOW ILLUSTRATION</span></div>
+          <div class="project-content"><div class="project-category"><span>LEGACY MODERNIZATION</span><svg class="icon"><use href="#i-code"/></svg></div><h3>Esko</h3><p>Bringing a legacy application forward with a modern API and connected business systems.</p><div class="tags"><span>ASP.NET Core 9</span><span>Salesforce</span><span>Access DB</span></div><button class="project-detail" data-project="esko">Explore project <span class="plus" aria-hidden="true">+</span></button></div>
+        </article>
       </div>
+      <p class="work-note"><svg class="icon"><use href="#i-code"/></svg>Professional projects, shared through the work and contributions behind them.<a href="https://github.com/Tanzeel99" target="_blank" rel="noopener noreferrer">Find me on GitHub</a></p>
+      <p class="sr-only" id="filter-status" role="status"></p>
     </section>
-
-    <section class="projects">
-      <div class="wrapper projects__wrapper">
-
-        <h2 class="projects__headline header-xl">Projects</h2>
-        <div class="projects__grid">
-          <div class="projects__item">
-            <!-- <picture class="projects__picture">
-              <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-1-large.webp" />
-              <img class="projects__image" src="/assets/images/thumbnail-project-1-small.webp"
-                alt="screenshot of design portfolio website" width-="343" height="253" />
-            </picture> -->
-            <h3 class="projects__name">Employee Management System using .net MVC</h3>
-            <p class="projects__tags">
-              <span>ASP.net MVC</span>
-              <span>SQL Server</span>
-              <span>Kendo UI</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </p>
-            <div class="projects__links">
-              <a href="" class="underline">View Project</a>
-              <a href="" class="underline">View Code</a>
-            </div>
-          </div>
-
-          <div class="projects__item">
-            <!-- <picture class="projects__picture">
-              <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-2-large.webp" />
-              <img class="projects__image" src="/assets/images/thumbnail-project-2-small.webp"
-                alt="screenshot of learning platform website with different courses" width-="343" height="253" />
-            </picture> -->
-            <h3 class="projects__name">Cafe Management System</h3>
-            <p class="projects__tags">
-              <span>Asp.net</span>
-              <span>HTML</span>
-              <span>CSS</span>
-            </p>
-            <div class="projects__links">
-              <a href="" class="underline">View Project</a>
-              <a href="" class="underline">View Code</a>
-            </div>
-          </div>
-
-          <!-- <div class="projects__item">
-            <picture class="projects__picture">
-              <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-3-large.webp" />
-              <img class="projects__image" src="/assets/images/thumbnail-project-3-small.webp"
-                alt="screenshot of To Do App showing a list of active and complete tasks" width-="343" height="253" />
-            </picture>
-            <h3 class="projects__name">Todo Web App</h3>
-            <p class="projects__tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </p>
-            <div class="projects__links">
-              <a href="" class="underline">View Project</a>
-              <a href="" class="underline">View Code</a>
-            </div>
-          </div>
-
-          <div class="projects__item">
-            <picture class="projects__picture">
-              <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-4-large.webp" />
-              <img class="projects__image" src="/assets/images/thumbnail-project-4-small.webp"
-                alt="screenshot of video player app with grid of thumbnails of movies and TV shows" width-="343"
-                height="253" />
-            </picture>
-            <h3 class="projects__name">Entertainment Web App</h3>
-            <p class="projects__tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </p>
-            <div class="projects__links">
-              <a href="" class="underline">View Project</a>
-              <a href="" class="underline">View Code</a>
-            </div>
-          </div>
-
-          <div class="projects__item">
-            <picture class="projects__picture">
-              <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-5-large.webp" />
-              <img class="projects__image" src="/assets/images/thumbnail-project-5-small.webp"
-                alt="screenshot of 4-player memory game with circular tiles that have symbols" width-="343"
-                height="253" />
-            </picture>
-            <h3 class="projects__name">Memory Game</h3>
-            <p class="projects__tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </p>
-            <div class="projects__links">
-              <a href="" class="underline">View Project</a>
-              <a href="" class="underline">View Code</a>
-            </div>
-          </div>
-
-          <div class="projects__item">
-            <picture class="projects__picture">
-              <source media="(min-width: 62.5em)" srcset="/assets/images/thumbnail-project-6-large.webp" />
-              <img class="projects__image" src="/assets/images/thumbnail-project-6-small.webp"
-                alt="grid of thumbnails of famous works of art" width-="343" height="253" />
-            </picture>
-            <h3 class="projects__name">Art Gallery Showcase</h3>
-            <p class="projects__tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </p>
-            <div class="projects__links">
-              <a href="" class="underline">View Project</a>
-              <a href="" class="underline">View Code</a>
-            </div>
-          </div> -->
-        </div>
+    <section class="expertise-section" id="expertise" aria-labelledby="expertise-heading"><div class="container expertise-layout">
+      <div class="expertise-intro reveal"><p class="eyebrow">MY EXPERTISE</p><h2 id="expertise-heading">The whole stack.<br><span class="muted-heading">One connected mindset.</span></h2><p>From the first database table to the last UI detail, I connect the pieces that make an application work.</p><div class="expertise-tabs" role="tablist" aria-label="Technical expertise"><button role="tab" id="tab-backend" aria-controls="panel-backend" aria-selected="true" data-tab="backend"><span class="tab-symbol">{ }</span>Backend & data<span class="tab-plus">−</span></button><button role="tab" id="tab-frontend" aria-controls="panel-frontend" aria-selected="false" tabindex="-1" data-tab="frontend"><span class="tab-symbol">&lt;/&gt;</span>Frontend & experience<span class="tab-plus">+</span></button><button role="tab" id="tab-delivery" aria-controls="panel-delivery" aria-selected="false" tabindex="-1" data-tab="delivery"><span class="tab-symbol">☁</span>Cloud & delivery<span class="tab-plus">+</span></button></div></div>
+      <div class="expertise-display reveal">
+        <div class="expertise-panel" id="panel-backend" role="tabpanel" aria-labelledby="tab-backend" tabindex="0"><div class="panel-top"><span class="panel-icon"><svg class="icon"><use href="#i-code"/></svg></span><span class="eyebrow">THE FOUNDATION</span></div><h3>Built to work.<br>Designed to last.</h3><p>Practical APIs, structured data, and maintainable application logic that support real business workflows.</p><div class="skill-cloud"><span class="skill-feature">C#</span><span class="skill-feature">ASP.NET Core</span><span>Web API</span><span>ASP.NET MVC</span><span>Entity Framework Core</span><span>SQL Server</span><span>LINQ</span><span>xUnit</span><span>REST APIs</span></div><div class="panel-foot"><svg class="icon"><use href="#i-check"/></svg>API integration · Database design · Application development</div></div>
+        <div class="expertise-panel" id="panel-frontend" role="tabpanel" aria-labelledby="tab-frontend" tabindex="0" hidden><div class="panel-top"><span class="panel-icon"><svg class="icon"><use href="#i-layers"/></svg></span><span class="eyebrow">THE EXPERIENCE</span></div><h3>Complex underneath.<br>Simple to use.</h3><p>Responsive interfaces and useful interactions that help people get things done with less friction.</p><div class="skill-cloud"><span class="skill-feature">Angular</span><span class="skill-feature">JavaScript</span><span>HTML5</span><span>CSS3</span><span>Angular Material</span><span>Telerik UI</span><span>Kendo UI</span><span>Bootstrap</span><span>jQuery</span></div><div class="panel-foot"><svg class="icon"><use href="#i-check"/></svg>Component-based UI · Data binding · Responsive layouts</div></div>
+        <div class="expertise-panel" id="panel-delivery" role="tabpanel" aria-labelledby="tab-delivery" tabindex="0" hidden><div class="panel-top"><span class="panel-icon"><svg class="icon"><use href="#i-globe"/></svg></span><span class="eyebrow">THE CONNECTIONS</span></div><h3>Beyond the code.<br>Into the real world.</h3><p>Cloud services, development tools, and integrations that connect applications to the systems around them.</p><div class="skill-cloud"><span class="skill-feature">Microsoft Azure</span><span class="skill-feature">GitHub</span><span>Azure Functions</span><span>Azure Storage</span><span>Microsoft Entra ID</span><span>Docker</span><span>RabbitMQ</span><span>Postman</span><span>SFTP</span></div><div class="panel-foot"><svg class="icon"><use href="#i-check"/></svg>Microsoft Certified: Azure Fundamentals</div></div>
       </div>
+    </div></section>
+    <section class="section container about-section" id="about" aria-labelledby="about-heading"><div class="section-heading reveal"><div><p class="eyebrow">THE PERSON BEHIND THE CODE</p><h2 id="about-heading">Curious by default.<br>Committed to the details<span class="accent">.</span></h2></div></div>
+      <div class="about-grid"><div class="about-copy reveal"><p class="about-lead">Hi, I’m Tanzeel — a developer who enjoys making complicated things feel straightforward.</p><p>Over 4.6 years, I’ve worked across frontend and backend development, collaborated directly with product teams, and taken features from requirements to delivery.</p><p>I care about clear code, thoughtful user experiences, and understanding the business problem before solving it.</p><div class="about-facts"><span><svg class="icon"><use href="#i-pin"/></svg>Based in Mangalore, India</span><span><svg class="icon"><use href="#i-globe"/></svg>Happy to relocate for the right opportunity</span></div><a href="assets/Mohammed-Tanzeel-Khan-Resume.pdf" download class="button"><svg class="icon"><use href="#i-file"/></svg>Download my resume</a></div>
+      <div class="experience-panel reveal"><div class="experience-heading"><span class="eyebrow">PROFESSIONAL EXPERIENCE</span><span class="experience-dates">Aug 2021 — Feb 2026</span></div><h3>Pace Wisdom Solutions</h3><p class="job-role">.NET Full Stack Development <span>·</span> Bangalore</p><ul class="experience-list"><li>Delivered across six cross-functional projects, moving between frontend and backend responsibilities.</li><li>Led a team of five and worked closely with the client’s CTO and product team.</li><li>Built a dynamic survey feature used by approximately 1,000 users.</li><li>Contributed to recruitment as a technical panelist at college placement drives.</li></ul><div class="award"><span aria-hidden="true">✧</span><div><strong>Star Performer</strong><span>January 2023</span></div></div></div></div>
+      <div class="credentials-row reveal"><div><span class="credential-symbol" aria-hidden="true">◈</span><div><span class="eyebrow">CERTIFICATION</span><h3>Microsoft Azure Fundamentals</h3><p>Microsoft Certified</p></div></div><div><span class="credential-symbol" aria-hidden="true">✳</span><div><span class="eyebrow">CERTIFICATION</span><h3>OCI Generative AI Professional</h3><p>2024 certification</p></div></div><div><span class="credential-symbol" aria-hidden="true">⌘</span><div><span class="eyebrow">EDUCATION</span><h3>B.E. Electronics & Communication</h3><p>MITE · 2017–2021 · CGPA 7.87/10</p></div></div></div>
     </section>
-
-    <section id="contact" class="contact bg-less-dark">
-      <div class="wrapper contact__wrapper bottom-border">
-        <div class="contact__text">
-          <h2 class="contact__headline header-xl">Contact</h2>
-          <p class="contact__description">
-            I would love to hear about your project and how I could help.
-            Please fill in the form, and I'll get back to you as soon as
-            possible.
-          </p>
-        </div>
-        <form onsubmit="sendMail()"; reset(); return false; class="contact__form">
-          <div class="contact__control">
-            <label for="name" class="visually-hidden">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required autocomplete="off"/>
-            <!-- <img src="/assets/images/icon-invalid.svg" alt="" class="contact__invalid-icon" width="24" height="24" /> -->
-          </div>
-          <div class="contact__control">
-            <label for="email" class="visually-hidden">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email" required />
-            <!-- <img src="/assets/images/icon-invalid.svg" alt="" class="contact__invalid-icon" width="24" height="24" /> -->
-          </div>
-          <div class="contact__control">
-            <label for="message" class="visually-hidden">Message</label>
-            <textarea name="message" id="message" cols="30" rows="3" placeholder="Message" required></textarea>
-            <!-- <img src="/assets/images/icon-invalid.svg" alt="" class="contact__invalid-icon" width="24" height="24" /> -->
-          </div>
-          <div class="contact__control align-right">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-layout"><div class="contact-copy reveal"><div class="availability"><span class="status-dot"></span>Let’s build something meaningful</div><h2 id="contact-heading">Good things start<br>with a <span>conversation.</span></h2><p>Have an opportunity, a project, or just a hello?<br>I’d love to hear from you.</p><div class="email-row"><a href="mailto:mtanzeel.k99@gmail.com">mtanzeel.k99@gmail.com</a><button class="icon-button copy-email" aria-label="Copy email address" title="Copy email address"><svg class="icon"><use href="#i-copy"/></svg></button></div><div class="contact-socials"><a href="https://github.com/Tanzeel99" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg>GitHub</a><a href="https://www.linkedin.com/in/mohammed-tanzeel-khan-891790197/" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-linkedin"/></svg>LinkedIn</a></div></div>
+      <form class="contact-form reveal" id="contact-form"><h3>Drop me a note</h3><div class="form-row"><div><label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" placeholder="Alex Morgan" maxlength="100" required></div><div><label for="contact-email">Your email</label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="alex@company.com" maxlength="254" required></div></div><label for="contact-message">What’s on your mind?</label><textarea id="contact-message" name="message" rows="4" placeholder="Tell me a little about your project or opportunity…" maxlength="3000" required></textarea><div class="form-footer"><span>Opens your email app with<br>your message ready to send.</span><button type="submit" class="button button-primary"><svg class="icon"><use href="#i-mail"/></svg>Compose email</button></div><p class="form-status" id="form-status" role="status"></p></form>
+    </div></section>
   </main>
+  <footer class="container footer"><a class="brand" href="#home"><span class="brand-name">tanzeel<span class="accent">.in</span></span></a><p>Thoughtful code. Real-world impact.</p><span>© <span id="year">2026</span> Mohammed Tanzeel Khan</span></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="icon-button dialog-close" aria-label="Close project details"><svg class="icon"><use href="#i-close"/></svg></button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p class="dialog-summary" id="dialog-summary"></p><div class="tags" id="dialog-tags"></div><div class="dialog-divider"></div><h3>What I contributed</h3><ul id="dialog-contributions"></ul><div class="dialog-outcome"><p class="eyebrow">THE RESULT</p><p id="dialog-outcome"></p></div><p class="dialog-note">Client project. Source code and internal application access are not publicly shared.</p><a href="mailto:mtanzeel.k99@gmail.com" class="button button-primary"><svg class="icon"><use href="#i-mail"/></svg>Let’s discuss the work</a></div></dialog>
+  <div class="toast" id="toast" role="status"></div>
 </body>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendMail(){
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "mtanzeelkhan99@gmail.com",
-    Password : "Mtk@9448953236",
-    To : 'mtanzeelkhan99@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "Message from Portfolio",
-    Body : "Name: " + document.getElementById("name").value + "<br> Message: "  + document.getElementById("message").value
-}).then(
-  message => alert(message)
-);
-  }
-</script>
 </html>
